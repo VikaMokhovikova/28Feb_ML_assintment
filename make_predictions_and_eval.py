@@ -4,6 +4,13 @@ from pandas import Series
 
 
 def make_prediction(clf: RandomForestClassifier, X_test) -> Series:
+    """
+    A function to make predictions for random forest classifier
+
+
+    :param clf: A pretrained random forest classifier
+    :return: predictions result of this classifier
+    """
     return clf.predict(X_test)
 
 
